@@ -2,7 +2,8 @@ package com.muruoyi.springbootdemo.exception;
 
 public enum ServiceError {
     CommonError("ERR-0001","Common Error"),
-    TitleCanNotBeTom("ERR-0002","title can not be tom");
+    TitleCanNotBeTom("ERR-0002","title can not be tom"),
+    CanNotFindMember("ERR-0003","查无此人");
 
     private String code;
 

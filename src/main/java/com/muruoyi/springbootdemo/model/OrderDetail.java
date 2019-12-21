@@ -13,16 +13,20 @@ import javax.persistence.Id;
 @ToString
 @Builder
 @Entity
-public class Account {
+public class OrderDetail {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    private String nickName;
+    private Integer orderId;
 
-    private Double balance;
+    private Integer productId;
 
-    private String mobile;
+    private String productName;
+
+    private Double productCount;
+
+    private Double productPrice;
 
 }
